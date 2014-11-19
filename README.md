@@ -1,4 +1,5 @@
-GettingCleaningDataCoursera
+Course Project - Getting and Cleaning Data Course
 ===========================
 
-Created as part of requirements for Coursera's Getting and Cleaning Data Course
+Instructions/explanations
+_______________________
