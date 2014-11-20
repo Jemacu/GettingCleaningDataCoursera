@@ -8,7 +8,8 @@ run_analysis.R:
 > To run this script, the 'UCI HAR Dataset' directory must be in the current working directory on your computer.
 > Set the working directory with `setwd("<path on your computer to directory containing 'UCI HAR Dataset'>")`
 
-> The data can be downloaded from this url: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+> The required data can be downloaded from this url: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
+> More information about the the *Human Activity Recognition Using Smartphones Dataset Version 1.0* and its authors can be found in the README.txt file included in the download.
 
 
 The run_analysis.R script,
@@ -21,5 +22,5 @@ The run_analysis.R script,
 
 The result is a table with 180 rows and 81 columns which is written to a text file in the current working directory with:
 `write.table(summeans, "tidyHARsmmrzd.txt", sep =" ", row.names=FALSE)`
-The table will remain as data.table in R (called 'summeans') but the table can also be reloaded with:
+The table will remain as a data.table in R (called 'summeans') but the table can also be reloaded from the text file with:
 `UICHARsummary <- read.table("tidyHARsmmrzd.txt", stringsAsFactors = FALSE, nrows=190, header=TRUE)`
