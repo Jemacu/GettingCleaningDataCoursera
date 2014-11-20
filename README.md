@@ -19,7 +19,7 @@ The run_analysis.R script,
 - labels the columns with names corresponding to the field names given in 'UCI HAR Dataset/features.txt', and
 - saves the resulting table to a text file called tidyHARsmmrzd.txt in the current working directory
 
-The result is a table with 180 rows and 81 columns which is written to a text file with:
+The result is a table with 180 rows and 81 columns which is written to a text file in the current working directory with:
 `write.table(summeans, "tidyHARsmmrzd.txt", sep =" ", row.names=FALSE)`
 The table will remain as data.table in R (called 'summeans') but the table can also be reloaded with:
-`nsumns <- read.table("tidyHARsmmrzd.txt", stringsAsFactors = FALSE, nrows=190, header=TRUE)`
+`UICHARsummary <- read.table("tidyHARsmmrzd.txt", stringsAsFactors = FALSE, nrows=190, header=TRUE)`
