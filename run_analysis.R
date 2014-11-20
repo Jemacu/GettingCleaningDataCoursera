@@ -4,17 +4,17 @@
 #    [Windows, Mac & Linux treat paths differently so to avoid any issues better to not have to use specify sub-folders]
 
 #read and merge test and training datasets
-x_test <- read.table("X_test.txt", stringsAsFactors=FALSE, header=FALSE, colClasses="numeric", nrows=3000)
-y_test <- read.table("Y_test.txt", stringsAsFactors=FALSE, header=FALSE)
-subject_test <- read.table("subject_test.txt", stringsAsFactors=FALSE, header=FALSE)
+x_test <- read.table("UCI HAR Dataset/test/X_test.txt", stringsAsFactors=FALSE, header=FALSE, colClasses="numeric", nrows=3000)
+y_test <- read.table("UCI HAR Dataset/test/Y_test.txt", stringsAsFactors=FALSE, header=FALSE)
+subject_test <- read.table("UCI HAR Dataset/test/subject_test.txt", stringsAsFactors=FALSE, header=FALSE)
 
 test_data <- cbind(subject_test, y_test, x_test)
 colnames(test_data)[1] <- "subject"
 colnames(test_data)[2] <- "activity_code"
 
-x_train <- read.table("X_train.txt", stringsAsFactors=FALSE, header=FALSE, colClasses="numeric", nrows=7400)
-y_train <- read.table("Y_train.txt", stringsAsFactors=FALSE, header=FALSE)
-subject_train <- read.table("subject_train.txt", stringsAsFactors=FALSE, header=FALSE)
+x_train <- read.table("UCI HAR Dataset/train/X_train.txt", stringsAsFactors=FALSE, header=FALSE, colClasses="numeric", nrows=7400)
+y_train <- read.table("UCI HAR Dataset/train/Y_train.txt", stringsAsFactors=FALSE, header=FALSE)
+subject_train <- read.table("UCI HAR Dataset/train/subject_train.txt", stringsAsFactors=FALSE, header=FALSE)
 
 train_data <- cbind(subject_train, y_train, x_train)
 colnames(train_data)[1] <- "subject"
@@ -24,7 +24,7 @@ merged_data <- rbind(test_data, train_data)
 
 #extract mean and std columns
 #I don't really know what this data is so I just took all the columns with "mean" or "std" in the name except where inside parentheses - that gives 
-#79 columns plus the subject and activity columns?wrote
+#79 columns plus the subject and activity columns
 means_sds <- merged_data[, c("subject", "activity_code", "V1", "V2", "V3", "V4", "V5", "V6", 
                                                      "V41", "V42", "V43", "V44", "V45", "V46", 
                                                      "V81", "V82", "V83", "V84", "V85", "V86",
@@ -79,6 +79,7 @@ rm(means_sds)
 
 #summarize data by subject and activity
 summeans <- DTmeans_sds[, lapply(.SD, mean), by=c("subject", "activity")]
+rm(DTmeans_sds)
 
 #write result to text file
 write.table(summeans, "tidyHARsmmrzd.txt", sep =" ", row.names=FALSE)
