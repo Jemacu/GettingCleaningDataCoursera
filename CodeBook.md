@@ -1,7 +1,13 @@
 Code Book
 ===========================
 
-####Fields/columns
+
+####Raw Data
+**Raw data source**: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+**Additional information** about the raw data is available at: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones and included in the zip file with the downloaded data.
+
+####Columns in result
 ___________________
 **subject**: integer values between 1 & 30 representing the 30 subjects that took part in the study
 
