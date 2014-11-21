@@ -1,6 +1,9 @@
-Code Book
+Code Book for run_analysis.R
 ===========================
+#### Summary
+The script 'run_analysis.R' calculates the means of mean and standard deviation values from motion data collected from the 'Smartphones' of 30 volunteers in a 2012 study (see citation below). 
 
+The script, a README.md file and this code book are part of the requirements for the Getting and Cleaning Data course offered by Coursera. Please see the README file for an explanation of what the script does and how to run it.
 
 ####Raw Data
 **Raw data source**: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
