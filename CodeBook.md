@@ -1,106 +1,52 @@
 Code Book
 ===========================
 
-Fields
-_______________________
-subject
-activity
+####Fields/columns
+___________________
+**subject**: integer values between 1 & 30 representing the 30 subjects that took part in the study
 
-1 tBodyAcc_meanX			41 tGravityAcc_meanX
-2 tBodyAcc_meanY
-3 tBodyAcc_meanZ
-4 tBodyAcc_stdX
-5 tBodyAcc_stdY
-6 tBodyAcc_stdZ
+**activity**: text description for the type of activity being measured (i.e. 'walking', 'walking upstairs', 'walking downstairs', 'sitting', 'standing' or 'laying')
 
-42 tGravityAcc_meanY
-43 tGravityAcc_meanZ
-44 tGravityAcc_stdX
-45 tGravityAcc_stdY
-46 tGravityAcc_stdZ
+**All remaining variables**, listed below, are numeric and were calculated by grouping the values in the raw data by 'subject' and 'activity' and calculating the means of the groups for each variable. The remaining variables are
 
-81 tBodyAccJerk_meanX
-82 tBodyAccJerk_meanY
-83 tBodyAccJerk_meanZ
-84 tBodyAccJerk_stdX
-85 tBodyAccJerk_stdY
-86 tBodyAccJerk_stdZ
+```
+tBodyAcc_meanX       tGravityAcc_meanX       tBodyAccJerk_meanX
+tBodyAcc_meanY       tGravityAcc_meanY       tBodyAccJerk_meanY
+tBodyAcc_meanZ       tGravityAcc_meanZ       tBodyAccJerk_meanZ
+tBodyAcc_stdX        tGravityAcc_stdX        tBodyAccJerk_stdX
+tBodyAcc_stdY        tGravityAcc_stdY        tBodyAccJerk_stdY
+tBodyAcc_stdZ        tGravityAcc_stdZ        tBodyAccJerk_stdZ
+```
+```
+tBodyGyro_meanX       tBodyGyroJerk_meanX       tBodyAccMag_mean
+tBodyGyro_meanY       tBodyGyroJerk_meanY       tBodyAccMag_std
+tBodyGyro_meanZ       tBodyGyroJerk_meanZ       tGravityAccMag_mean
+tBodyGyro_stdX        tBodyGyroJerk_stdX        tGravityAccMag_std
+tBodyGyro_stdY        tBodyGyroJerk_stdY        tBodyAccJerkMag_mean
+tBodyGyro_stdZ        tBodyGyroJerk_stdZ        tBodyAccJerkMag_std
+```
+```
+tBodyGyroMag_mean         fBodyAcc_meanX       fBodyAccJerk_meanX
+tBodyGyroMag_std          fBodyAcc_meanY       fBodyAccJerk_meanY
+tBodyGyroJerkMag_mean     fBodyAcc_meanZ       fBodyAccJerk_meanZ
+tBodyGyroJerkMag_std      fBodyAcc_stdX        fBodyAccJerk_stdX
+fBodyAcc_meanFreqX        fBodyAcc_stdY        fBodyAccJerk_stdY
+fBodyAcc_meanFreqY        fBodyAcc_stdZ        fBodyAccJerk_stdZ
+fBodyAcc_meanFreqZ
+```
+```
+fBodyAccJerk_meanFreqX       fBodyGyro_meanX       fBodyAccMag_mean
+fBodyAccJerk_meanFreqY       fBodyGyro_meanY       fBodyAccMag_std
+fBodyAccJerk_meanFreqZ       fBodyGyro_meanZ       fBodyAccMag_meanFreq
+fBodyGyro_meanFreqX          fBodyGyro_stdX        fBodyBodyAccJerkMag_mean
+fBodyGyro_meanFreqY          fBodyGyro_stdY        fBodyBodyAccJerkMag_std
+fBodyGyro_meanFreqZ          fBodyGyro_stdZ        fBodyBodyAccJerkMag_meanFreq
+```
+```
+fBodyBodyGyroMag_mean       fBodyBodyGyroJerkMag_mean
+fBodyBodyGyroMag_std       fBodyBodyGyroJerkMag_std
+fBodyBodyGyroMag_meanFreq       fBodyBodyGyroJerkMag_meanFreq
+```
 
-121 tBodyGyro_meanX
-122 tBodyGyro_meanY
-123 tBodyGyro_meanZ
-124 tBodyGyro_stdX
-125 tBodyGyro_stdY
-126 tBodyGyro_stdZ
 
-161 tBodyGyroJerk_meanX
-162 tBodyGyroJerk_meanY
-163 tBodyGyroJerk_meanZ
-164 tBodyGyroJerk_stdX
-165 tBodyGyroJerk_stdY
-166 tBodyGyroJerk_stdZ
-
-201 tBodyAccMag_mean
-202 tBodyAccMag_std
-
-214 tGravityAccMag_mean
-215 tGravityAccMag_std
-
-227 tBodyAccJerkMag_mean
-228 tBodyAccJerkMag_std
-
-240 tBodyGyroMag_mean
-241 tBodyGyroMag_std
-
-253 tBodyGyroJerkMag_mean
-254 tBodyGyroJerkMag_std
-
-266 fBodyAcc_meanX
-267 fBodyAcc_meanY
-268 fBodyAcc_meanZ
-269 fBodyAcc_stdX
-270 fBodyAcc_stdY
-271 fBodyAcc_stdZ
-
-294 fBodyAcc_meanFreqX
-295 fBodyAcc_meanFreqY
-296 fBodyAcc_meanFreqZ
-
-345 fBodyAccJerk_meanX
-346 fBodyAccJerk_meanY
-347 fBodyAccJerk_meanZ
-348 fBodyAccJerk_stdX
-349 fBodyAccJerk_stdY
-350 fBodyAccJerk_stdZ
-
-373 fBodyAccJerk_meanFreqX
-374 fBodyAccJerk_meanFreqY
-375 fBodyAccJerk_meanFreqZ
-
-424 fBodyGyro_meanX
-425 fBodyGyro_meanY
-426 fBodyGyro_meanZ
-427 fBodyGyro_stdX
-428 fBodyGyro_stdY
-429 fBodyGyro_stdZ
-
-452 fBodyGyro_meanFreqX
-453 fBodyGyro_meanFreqY
-454 fBodyGyro_meanFreqZ
-
-503 fBodyAccMag_mean
-504 fBodyAccMag_std
-513 fBodyAccMag_meanFreq
-
-516 fBodyBodyAccJerkMag_mean
-517 fBodyBodyAccJerkMag_std
-526 fBodyBodyAccJerkMag_meanFreq
-
-529 fBodyBodyGyroMag_mean
-530 fBodyBodyGyroMag_std
-539 fBodyBodyGyroMag_meanFreq
-
-542 fBodyBodyGyroJerkMag_mean
-543 fBodyBodyGyroJerkMag_std
-552 fBodyBodyGyroJerkMag_meanFreq
 
