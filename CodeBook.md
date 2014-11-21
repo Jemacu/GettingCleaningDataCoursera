@@ -30,39 +30,35 @@ The script, a README.md file and this code book are part of the requirements for
 The variable names are the same as those in "...UCI HAR Dataset/features_info.txt" except that dashes/hyphens have been replaced with underscores and parentheses have been removed.
 The variables are:
 ```
-tBodyAcc_meanX       tGravityAcc_meanX       tBodyAccJerk_meanX
-tBodyAcc_meanY       tGravityAcc_meanY       tBodyAccJerk_meanY
-tBodyAcc_meanZ       tGravityAcc_meanZ       tBodyAccJerk_meanZ
-tBodyAcc_stdX        tGravityAcc_stdX        tBodyAccJerk_stdX
-tBodyAcc_stdY        tGravityAcc_stdY        tBodyAccJerk_stdY
-tBodyAcc_stdZ        tGravityAcc_stdZ        tBodyAccJerk_stdZ
-```
-```
-tBodyGyro_meanX       tBodyGyroJerk_meanX       tBodyAccMag_mean
-tBodyGyro_meanY       tBodyGyroJerk_meanY       tBodyAccMag_std
-tBodyGyro_meanZ       tBodyGyroJerk_meanZ       tGravityAccMag_mean
-tBodyGyro_stdX        tBodyGyroJerk_stdX        tGravityAccMag_std
-tBodyGyro_stdY        tBodyGyroJerk_stdY        tBodyAccJerkMag_mean
-tBodyGyro_stdZ        tBodyGyroJerk_stdZ        tBodyAccJerkMag_std
-```
-```
-tBodyGyroMag_mean         fBodyAcc_meanX       fBodyAccJerk_meanX
-tBodyGyroMag_std          fBodyAcc_meanY       fBodyAccJerk_meanY
-tBodyGyroJerkMag_mean     fBodyAcc_meanZ       fBodyAccJerk_meanZ
-tBodyGyroJerkMag_std      fBodyAcc_stdX        fBodyAccJerk_stdX
-fBodyAcc_meanFreqX        fBodyAcc_stdY        fBodyAccJerk_stdY
-fBodyAcc_meanFreqY        fBodyAcc_stdZ        fBodyAccJerk_stdZ
+tBodyAcc_meanX            tGravityAcc_meanX       tBodyAccJerk_meanX
+tBodyAcc_meanY            tGravityAcc_meanY       tBodyAccJerk_meanY
+tBodyAcc_meanZ            tGravityAcc_meanZ       tBodyAccJerk_meanZ
+tBodyAcc_stdX             tGravityAcc_stdX        tBodyAccJerk_stdX
+tBodyAcc_stdY             tGravityAcc_stdY        tBodyAccJerk_stdY
+tBodyAcc_stdZ             tGravityAcc_stdZ        tBodyAccJerk_stdZ
+
+tBodyGyro_meanX           tBodyGyroJerk_meanX     tBodyAccMag_mean
+tBodyGyro_meanY           tBodyGyroJerk_meanY     tBodyAccMag_std
+tBodyGyro_meanZ           tBodyGyroJerk_meanZ     tGravityAccMag_mean
+tBodyGyro_stdX            tBodyGyroJerk_stdX      tGravityAccMag_std
+tBodyGyro_stdY            tBodyGyroJerk_stdY      tBodyAccJerkMag_mean
+tBodyGyro_stdZ            tBodyGyroJerk_stdZ      tBodyAccJerkMag_std
+
+tBodyGyroMag_mean         fBodyAcc_meanX          fBodyAccJerk_meanX
+tBodyGyroMag_std          fBodyAcc_meanY          fBodyAccJerk_meanY
+tBodyGyroJerkMag_mean     fBodyAcc_meanZ          fBodyAccJerk_meanZ
+tBodyGyroJerkMag_std      fBodyAcc_stdX           fBodyAccJerk_stdX
+fBodyAcc_meanFreqX        fBodyAcc_stdY           fBodyAccJerk_stdY
+fBodyAcc_meanFreqY        fBodyAcc_stdZ           fBodyAccJerk_stdZ
 fBodyAcc_meanFreqZ
-```
-```
+
 fBodyAccJerk_meanFreqX       fBodyGyro_meanX       fBodyAccMag_mean
 fBodyAccJerk_meanFreqY       fBodyGyro_meanY       fBodyAccMag_std
 fBodyAccJerk_meanFreqZ       fBodyGyro_meanZ       fBodyAccMag_meanFreq
 fBodyGyro_meanFreqX          fBodyGyro_stdX        fBodyBodyAccJerkMag_mean
 fBodyGyro_meanFreqY          fBodyGyro_stdY        fBodyBodyAccJerkMag_std
 fBodyGyro_meanFreqZ          fBodyGyro_stdZ        fBodyBodyAccJerkMag_meanFreq
-```
-```
+
 fBodyBodyGyroMag_mean        fBodyBodyGyroJerkMag_mean
 fBodyBodyGyroMag_std         fBodyBodyGyroJerkMag_std
 fBodyBodyGyroMag_meanFreq    fBodyBodyGyroJerkMag_meanFreq
