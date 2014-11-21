@@ -1,19 +1,18 @@
 Code Book for run_analysis.R
 ===========================
-#### Summary
+#### Summary:
 The script 'run_analysis.R' calculates the means of mean and standard deviation values from motion data collected from the 'Smartphones' of 30 volunteers in a 2012 study (see citation below). 
 
 The script, a README.md file and this code book are part of the requirements for the Getting and Cleaning Data course offered by Coursera. Please see the README file for an explanation of what the script does and how to run it.
 
-####Raw Data
+####Raw Data:
 **Raw data source**: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 **Information** about the raw data, collection methods and study design is available at: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones and included in the zip file with the downloaded data.
 
 **Citation**:  Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
-####Columns in Output
-___________________
+####Code Book (Columns in Output):
 **subject**: integer values between 1 & 30 representing the 30 subjects that took part in the study
 
 **activity**: text description for the type of activity being measured (i.e. 'walking', 'walking upstairs', 'walking downstairs', 'sitting', 'standing' or 'laying')
