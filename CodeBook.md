@@ -7,14 +7,26 @@ Code Book
 
 **Additional information** about the raw data is available at: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones and included in the zip file with the downloaded data.
 
-####Columns in result
+**Citation**:  Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+####Columns in Output
 ___________________
 **subject**: integer values between 1 & 30 representing the 30 subjects that took part in the study
 
 **activity**: text description for the type of activity being measured (i.e. 'walking', 'walking upstairs', 'walking downstairs', 'sitting', 'standing' or 'laying')
 
-**All remaining variables**, listed below, are numeric and were calculated by grouping the values in the raw data by 'subject' and 'activity' and calculating the means of the groups for each variable. The remaining variables are
+**All remaining variables**, listed below, are numeric (original data collected in standard gravity units 'g') and were calculated by grouping the values in the raw data by 'subject' and 'activity' and calculating the means of the groups for each variable. Note that components of the variable names can be interpreted as follows:
+- t = time domain signals
+- f = frequency domain signals
+- Acc = accelerometer signals
+- Body = body acceleration
+- Gravity = gravity acceleration
+- Gyro = gyroscope 3-axial raw signals
+- Mag = magnitude
+- Jerk = a value derived from body linear acceleration and angular velocity [*best I can do*]
 
+The variable names are the same as those in "...UCI HAR Dataset/features_info.txt" except that dashes/hyphens have been replaced with underscores and parentheses have been removed.
+The variables are:
 ```
 tBodyAcc_meanX       tGravityAcc_meanX       tBodyAccJerk_meanX
 tBodyAcc_meanY       tGravityAcc_meanY       tBodyAccJerk_meanY
@@ -49,9 +61,9 @@ fBodyGyro_meanFreqY          fBodyGyro_stdY        fBodyBodyAccJerkMag_std
 fBodyGyro_meanFreqZ          fBodyGyro_stdZ        fBodyBodyAccJerkMag_meanFreq
 ```
 ```
-fBodyBodyGyroMag_mean       fBodyBodyGyroJerkMag_mean
-fBodyBodyGyroMag_std       fBodyBodyGyroJerkMag_std
-fBodyBodyGyroMag_meanFreq       fBodyBodyGyroJerkMag_meanFreq
+fBodyBodyGyroMag_mean        fBodyBodyGyroJerkMag_mean
+fBodyBodyGyroMag_std         fBodyBodyGyroJerkMag_std
+fBodyBodyGyroMag_meanFreq    fBodyBodyGyroJerkMag_meanFreq
 ```
 
 
