@@ -27,7 +27,7 @@ The script, a README.md file and this code book are part of the requirements for
 - Mag = magnitude
 - Jerk = a value derived from body linear acceleration and angular velocity [*best I can do*]
 
-The variable names are the same as those in "...UCI HAR Dataset/features_info.txt" except that dashes/hyphens have been replaced with underscores and parentheses have been removed.
+The variable names are the same as those in "...UCI HAR Dataset/features_info.txt" except that dashes/hyphens have been replaced with underscores and parentheses have been removed. (Although week four materials discourage the use of underscores, they are [valid in R](https://stat.ethz.ch/R-manual/R-devel/library/base/html/make.names.html) and are commonly used in other applications)
 The variables are:
 ```
 tBodyAcc_meanX            tGravityAcc_meanX       tBodyAccJerk_meanX
